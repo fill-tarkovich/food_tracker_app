@@ -1,0 +1,15 @@
+{
+  "name": "food_tracker",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "main": "src/script.js",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "chart.js": "^3.7.1",
+    "parcel": "latest",
+    "snackbar": "^1.1.0"
+  }
+}

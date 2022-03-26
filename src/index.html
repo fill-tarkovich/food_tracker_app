@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Food Tracker</h1>
+    </header>
+    <main>
+      <div class="top">
+        <form>
+          <h2>Add food:</h2>
+          <div>
+            <label for="name">Food name:</label>
+            <select name="food-name" id="food-name" autocomplete="off">
+              <option value="" disabled selected>Please select</option>
+              <option value="pizza">Pizza</option>
+              <option value="pasta">Pasta</option>
+              <option value="burger">Burger</option>
+              <option value="soup">Soup</option>
+              <option value="salad">Salad</option>
+              <option value="apple">Apple</option>
+              <option value="peach">Peach</option>
+              <option value="cider">Cider</option>
+            </select>
+          </div>
+          <div>
+            <label for="carbs">Carbs:</label>
+            <input
+              id="carbs"
+              type="number"
+              placeholder="0g"
+              onfocus="placeholder=''"
+              onblur="placeholder='0g'"
+            />
+          </div>
+          <div>
+            <label for="protein">Protein:</label>
+            <input
+              type="number"
+              id="protein"
+              placeholder="0g"
+              onfocus="placeholder=''"
+              onblur="placeholder='0g'"
+            />
+          </div>
+          <div>
+            <label for="fat">Fat:</label>
+            <input
+              type="number"
+              id="fat"
+              placeholder="0g"
+              onfocus="placeholder=''"
+              onblur="placeholder='0g'"
+            />
+          </div>
+          <button id="btn" type="submit">Add</button>
+        </form>
+        <div class="chart-box">
+          <canvas id="chart"></canvas>
+          <div class="total">
+            Your total is: <strong class="total-amount">0</strong> calories
+          </div>
+        </div>
+      </div>
+      <div class="cards"></div>
+    </main>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
